@@ -15,7 +15,7 @@ def reload_cookies():
 
 @application.route('/')
 def hello_world():
-    return 'Hello World!'
+    return json.dumps({'msg': 'Hello'})
 
 @application.route('/rut/<string:rut>')
 def get_info(rut):
